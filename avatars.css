@@ -1,0 +1,55 @@
+#joeAvatar{
+    width: 75pt;
+    padding-right:10pt;
+    padding-top: 30pt;
+}
+#joeAvatar:hover{
+    transform: scale(1.1, 1.1);
+}
+#monicaAvatar{
+    width: 70pt;
+    padding-right:10pt;
+    padding-left:10pt;
+    padding-top: 20pt;
+}
+#monicaAvatar:hover{
+    transform: scale(1.1, 1.1);
+}
+#lexiAvatar{
+    width: 55pt;
+    padding-right:10pt;
+    padding-top: 20pt;
+    padding-left:10pt;
+}
+#lexiAvatar:hover{
+    transform: scale(1.1, 1.1);
+}
+#kobyAvatar{
+    width: 55pt;
+    padding-right:10pt;
+    padding-top: 20pt;
+}
+#kobyAvatar:hover{
+    transform: scale(1.1, 1.1);
+}
+#krueAvatar{
+    width: 40pt;
+    padding-right:10pt;
+    padding-top: 20pt;
+}
+#krueAvatar:hover{
+    transform: scale(1.1, 1.1);
+}
+#maisynAvatar{
+    width: 30pt;
+    padding-right:10pt;
+    padding-top: 20pt;
+}
+#maisynAvatar:hover{
+    transform: scale(1.1, 1.1);
+}
+#avatarSubtitle{
+    margin-top: 0px;
+    font-weight: bold;
+    font-family: cursive;
+}

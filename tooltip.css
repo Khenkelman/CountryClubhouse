@@ -1,0 +1,228 @@
+.joetooltip {
+  position: relative;
+  display: inline-block;
+}
+.joetooltip .joetooltiptext {
+  visibility: hidden;
+  width: 200px;
+  background-color: transparent;
+  color: gray;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  font-family: sans-serif;
+  font-size: 8pt;
+  position: absolute;
+  z-index: 1;
+  bottom: 86%;
+  left: 13%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.joetooltip .joetooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  margin-left: -10px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: gray transparent transparent transparent;
+}
+.joetooltip:hover .joetooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+
+.monicatooltip {
+  position: relative;
+  display: inline-block;
+}
+.monicatooltip .monicatooltiptext {
+  visibility: hidden;
+  width: 200px;
+  background-color: transparent;
+  color: gray;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  font-family: sans-serif;
+  font-size: 8pt;
+  position: absolute;
+  z-index: 1;
+  bottom: 90%;
+  left: 20%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.monicatooltip .monicatooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  margin-left: -10px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: gray transparent transparent transparent;
+}
+.monicatooltip:hover .monicatooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+
+.lexitooltip {
+  position: relative;
+  display: inline-block;
+}
+.lexitooltip .lexitooltiptext {
+  visibility: hidden;
+  width: 200px;
+  background-color: transparent;
+  color: gray;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  font-family: sans-serif;
+  font-size: 8pt;
+  position: absolute;
+  z-index: 1;
+  bottom: 88%;
+  left: 13%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.lexitooltip .lexitooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  margin-left: -10px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: gray transparent transparent transparent;
+}
+.lexitooltip:hover .lexitooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+.kobytooltip {
+  position: relative;
+  display: inline-block;
+}
+.kobytooltip .kobytooltiptext {
+  visibility: hidden;
+  width: 200px;
+  background-color: transparent;
+  color: gray;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  font-family: sans-serif;
+  font-size: 8pt;
+  position: absolute;
+  z-index: 1;
+  bottom: 87%;
+  left: 1%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.kobytooltip .kobytooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  margin-left: -10px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: gray transparent transparent transparent;
+}
+.kobytooltip:hover .kobytooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+
+
+.kruetooltip {
+  position: relative;
+  display: inline-block;
+}
+.kruetooltip .kruetooltiptext {
+  visibility: hidden;
+  width: 200px;
+  background-color: transparent;
+  color: gray;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  font-family: sans-serif;
+  font-size: 8pt;
+  position: absolute;
+  z-index: 1;
+  bottom: 83%;
+  left: -13%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.kruetooltip .kruetooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  margin-left: -10px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: gray transparent transparent transparent;
+}
+.kruetooltip:hover .kruetooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+.maisyntooltip {
+  position: relative;
+  display: inline-block;
+}
+.maisyntooltip .maisyntooltiptext {
+  visibility: hidden;
+  width: 200px;
+  background-color: transparent;
+  color: gray;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  font-family: sans-serif;
+  font-size: 8pt;
+  position: absolute;
+  z-index: 1;
+  bottom: 78%;
+  left: -30%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.maisyntooltip .maisyntooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  margin-left: -10px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: gray transparent transparent transparent;
+}
+.maisyntooltip:hover .maisyntooltiptext {
+  visibility: visible;
+  opacity: 1;
+}

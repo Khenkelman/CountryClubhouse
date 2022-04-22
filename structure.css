@@ -1,0 +1,164 @@
+
+#leftcol{
+    float:left;
+    width: 20%
+}
+#rightcol{
+    float:left;
+    width: 80%;
+    height: 100%;
+    overflow-y: scroll;
+}
+
+@media screen and (orientation:portrait) {
+    
+    #leftcol{
+        width: 5%;
+        opacity: 0;
+    }
+    #rightcol{
+        width: 95%;
+        margin-top: 8%;
+    }
+    #sign1{
+        transform: rotate(0.01turn);
+        font-size: max(4vw, 8pt);
+    }
+    #sign2{
+        transform: rotate(-0.01turn);
+        font-size: max(4vw, 8pt);
+    }
+    #signHeader{
+        opacity: 1;
+    }
+    #activitiesBox{
+        font-size: 6pt;
+    }
+    #testimonialBox{
+        font-size: 8pt;
+    }
+    #imgContainer{
+        height: 13%;
+    }
+     #meetMonicaBody{
+         font-size: 8pt
+    }
+    #tap{
+        font-size: 7pt
+    }
+}
+
+#contactBox{
+    display: inline-block;
+    background: url(backgrounds/white.png);
+    background-size: 100%;
+    width:90%;
+    margin-top:15pt;
+    padding: 15pt;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 0px 7px gray;
+    margin-left: 3px;
+    margin-bottom: 100pt;
+    padding-bottom: 70pt;
+}
+#meetMonicaBox {
+    display: block;
+    background: url(backgrounds/white.png);
+    width:90%;
+    text-align: center;
+    padding: 15pt;
+    border-radius: 10px;
+    box-shadow: 0px 0px 7px gray;
+    margin-left: 3px;
+    margin-top:15pt;
+    padding-bottom: 70pt;
+}
+#ourMissionBox {
+    display: inline-block;
+    background: url('backgrounds/red.png');
+    background-size: 100%;
+    width:90%;
+    height: auto;
+    margin-top:15pt;
+    padding: 15pt;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 0px 7px gray;
+    margin-left: 3px;
+    padding-bottom: 50pt;
+}
+#activitiesBox{
+    display: inline-block;
+    background: url("backgrounds/white.png");
+    background-size: 100%;
+    width:90%;
+    height: auto;
+    margin-top:15pt;
+    padding: 15pt;
+    border-radius: 10px;
+    text-align: center;
+    font-family: sans-serif;
+    letter-spacing: 1;
+    box-shadow: 0px 0px 7px gray;
+    margin-left: 3px;
+    padding-bottom: 70pt;
+}
+#subLeftCol{
+    display: inline;
+    float:left;
+    width: 42%;
+    color: white;
+    font-family: sans-serif;
+    letter-spacing: 1;
+    margin-left: 5%;
+    margin-right: 2%;
+    font-size: 14pt;
+    
+}
+#subRightCol{
+    display: inline;
+    float:left;
+    width: 42%;
+    color: white;
+    font-family: sans-serif;
+    letter-spacing: 1;
+    margin-left: 2%;
+    margin-right: 5%;
+    font-size: 14pt;
+    
+}
+#testimonialBox{
+    display: inline-block;;
+    background: url(backgrounds/orange.png);
+    background-size: 100%;
+    width:90%;
+    margin-top:15pt;
+    padding: 15pt;
+    padding-bottom: 30pt;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 0px 7px gray;
+    margin-left: 3px;
+    padding-bottom: 50pt;
+}
+#testLeft{
+    float: left;
+    width: 10%;
+    transform: scale(-1, 1);
+    font-size: 20pt;
+}
+#testRight{
+    float: left;
+    width: 10%;
+    font-size: 20pt;
+}
+#testMiddle{
+    font-family: sans-serif;
+    float: left;
+    width: 80%;
+    padding-bottom: 10pt;
+}
+#logo{
+    width:100%;
+}

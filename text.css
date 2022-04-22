@@ -1,0 +1,51 @@
+
+#headerStyle1{
+    font-family: myCursive;
+    font-size: 40pt;
+    color: #e85d5d;
+    word-spacing: 1pt;
+}
+#HeaderStyle2{
+    font-family: myCursive;
+    font-size: 40pt;
+    color: white;
+    word-spacing: 1pt;
+}
+#subheader{
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 14pt;
+    color: black;
+    word-spacing: 1pt;
+    padding-bottom: 15pt;
+    margin-top:0px;
+    letter-spacing: -0.4pt;
+}
+#meetMonicaBody{
+    color: gray;
+    font-family: serif;
+    padding-left: 40pt;
+    padding-right: 40pt;
+}
+#testimonialBody{
+    text-align: center;
+    color: white;
+}
+#joinUsBox{
+    display: inline;
+    padding: 7px;
+    border: 1px solid white;
+    font-family: sans-serif
+}
+#submit{
+    font-size: 12pt;
+    margin-top: 10pt;
+    padding-left: 15pt;
+    padding-right: 15pt;
+    margin-bottom: 20pt;
+}
+#tap{
+    color: gray;
+    font-size: 10pt;
+    margin-top: 20pt;
+}
