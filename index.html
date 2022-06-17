@@ -1,40 +1,5 @@
 <html>
     <head>
-        <script>
-            
-            const faders = document.querySelectorAll(".fade-in");
-            const sliders = document.querySelectorAll(".slide-in");
-
-            const appearOptions = {
-              threshold: 0,
-              rootMargin: "0px 0px -250px 0px"
-            };
-
-
-            const appearOnScroll = new IntersectionObserver(function(
-              entries,
-              appearOnScroll
-            ) {
-              entries.forEach(entry => {
-                if (!entry.isIntersecting) {
-                  return;
-                } else {
-                  entry.target.classList.add("appear");
-                  appearOnScroll.unobserve(entry.target);
-                }
-              });
-            },
-            appearOptions);
-
-            faders.forEach(faders => {
-              appearOnScroll.observe(faders);
-            });
-
-            sliders.forEach(sliders => {
-              appearOnScroll.observe(sliders);
-            });
-            
-        </script>
         <link rel="stylesheet" href="styles.css">
         <link rel="stylesheet" href="avatars.css">
         <link rel="stylesheet" href="tooltip.css">
@@ -44,38 +9,41 @@
         <link rel="stylesheet" href="structure.css">
     </head>
     <header>
-                <div id=signHeader>
-                    <span class=signBoxHead id=sign1>
-                        <a href="#kidsBanner">Home</a>
-                    </span>
-                    <span class=signBoxHead id=sign2>
-                        <a href="#meetMonicaBox">About Me</a>
-                    </span>
-                    <span class=signBoxHead id=sign1>
-                        <a href="#kidsBanner">Activities</a>
-                    </span>
-                    <span class=signBoxHead id=sign2>
-                        <a href="#meetMonicaBox">Contact</a>
-                    </span>
-                </div>
+        <div id=signHeader>
+            <span class=signBoxHead id=sign1>
+                <a href="#kidsBanner">Home</a>
+            </span>
+            <span class=signBoxHead id=sign2>
+                <a href="#meetMonicaBox">About Me</a>
+            </span>
+            <span class=signBoxHead id=sign1>
+                <a href="#kidsBanner">Activities</a>
+            </span>
+            <span class=signBoxHead id=sign2>
+                <a href="#contactBox">Contact</a>
+            </span>
+        </div>
     </header>
     <body>
+        <img src="etc/babiesBox2.png" class="preload">
+        <img src="etc/toddlersBox2.png" class="preload">
+        <img src="etc/schoolersBox2.png" class="preload">
         
         <div id=leftcol>
             <div>
                 <img src=etc/logo.png id=logo>
                 <div id=post>
                     <div class=signBox id=sign1>
-                        <a href="etc/#kidsBanner">Home</a>
+                        <a href="#kidsBanner">Home</a>
                     </div>
                     <div class=signBox id=sign2>
-                        <a href="etc/#meetMonicaBox">About Me</a>
+                        <a href="#meetMonicaBox">About Me</a>
                     </div>
                     <div class=signBox id=sign1>
-                        <a href="etc/#activitiesBox">Activities</a>
+                        <a href="#activitiesBox">Activities</a>
                     </div>
                     <div class=signBox id=sign2>
-                        <a href="etc/#kidsBanner">Contact</a>
+                        <a href="#contactBox">Contact</a>
                     </div>
                 </div>
             </div>
@@ -90,125 +58,138 @@
                 <div id=imgBox3 style="clear:both;"></div>
             </div>
             <div id=meetMonicaBox>
-                <span id=headerStyle1>Meet Mrs. Monica</span>
+                <span class=headerStyle1>Meet Mrs. Monica</span>
                 <p id=meetMonicaBody>Hello! Let me tell you a little bit about myself. My name is Monica Henkelman, I have been a licensed daycare provider for 15 years. My husban and I have been married for 17 years. I also have 4 wonderful children of my own. I absolutely love kids that's what brings me where I am today.    </p>
-                
-                
-                
-                
-                <span class="joetooltip">
+                <div id="joetooltip">
                     <img src=etc/joeAvatar.png id=joeAvatar>
-                    <span class=joetooltiptext>(Husband)<br>Joe Henkelman<br></span>
-                </span>
+                    <div id=joetooltiptext>(Husband)<br>Joe Henkelman<br></div>
+                </div>
                 
-                <span class="monicatooltip">
+                <div id="monicatooltip">
                     <img src=etc/monicaAvatar.png id=monicaAvatar>
-                    <span class=monicatooltiptext>(Me)<br>Monica Henkelman<br></span>
-                </span>
-                <span class="lexitooltip">
+                    <div id=monicatooltiptext>(Me)<br>Monica Henkelman<br></div>
+                </div>
+                <div id="anthonytooltip">
+                    <img src=etc/anthonyAvatar.png id=anthonyAvatar>
+                    <div id=anthonytooltiptext>(Son)<br>Anthony Henkelman<br></div>
+                </div>
+                <div id="lexitooltip">
                     <img src=etc/lexiAvatar.png id=lexiAvatar>
-                    <span class=lexitooltiptext>(Daughter)<br>Alexis Miller<br></span>
-                </span>
-                <span class="kobytooltip">
+                    <div id=lexitooltiptext>(Daughter)<br>Alexis Miller<br></div>
+                </div>
+                <div id="kobytooltip">
                     <img src=etc/kobyAvatar.png id=kobyAvatar>
-                    <span class=kobytooltiptext>(Son)<br>Koby Henkelman<br></span>
-                </span>
-                <span class="kruetooltip">
+                    <div id=kobytooltiptext>(Son)<br>Koby Henkelman<br></div>
+                </div>
+                <div id="kruetooltip">
                     <img src=etc/krueAvatar.png id=krueAvatar>
-                    <span class=kruetooltiptext>(Son)<br>Krue Henkelman<br></span>
-                </span>
-                <span class="maisyntooltip">
+                    <div id=kruetooltiptext>(Son)<br>Krue Henkelman<br></div>
+                </div>
+                <div id="maisyntooltip">
                     <img src=etc/maisynAvatar.png id=maisynAvatar>
-                    <span class=maisyntooltiptext>(Daughter)<br>Maisyn Henkelman<br></span>
-                </span>
+                    <div id=maisyntooltiptext>(Daughter)<br>Maisyn Henkelman<br></div>
+                </div>
                 <p id=tap>(tap/hover to meet my family!)</p>
             </div>
-            
-            
-            
-            
             <div id=ourMissionBox>
-                <span id=headerStyle2>Our Mission</span>
-                <div id=subheader>WHATS OUR GOAL?</div>
-                    <div id=filler>
-                        <div id=subLeftCol>
-                            <ul>
-                                <li style="margin-bottom: 15pt;">To provide a loving caring relaxed atmosphere where physical affection is freely given.</li> 
-                                <li>To instill in each child a feeling of autonomy and a positive self-concept</li>
-                            </ul>
-                        </div>
-                        <div id=subRightCol>
-                            <ul>
-                                
-                                <li style="margin-bottom: 15pt;">To provide a joyful, enthusastic, and spontateous attitude with the children</li>
-                                <li>To meet each individual child's physical and mental needs</li>
-                            </ul>
-                        </div>
+                <span class=headerStyle2>Our Mission</span>
+                <div class=subheader>WHATS OUR GOAL?</div>
+                <div id=filler>
+                    <div id=subLeftCol>
+                        <ul>
+                            <li style="margin-bottom: 15pt;">To provide a loving caring relaxed atmosphere where physical affection is freely given.</li> 
+                            <li>To instill in each child a feeling of autonomy and a positive self-concept</li>
+                        </ul>
                     </div>
-            </div>
-            
-            
-            
-            
-            <div id=activitiesBox>
-                <span id=headerStyle1>Activities</span>
-                <p id=subheader>THINGS TO DO</p>
-                <div id=activitiesNav>
-                    <a href class=nav1>Learn</a>
-                    <a href class=nav1>Play</a>
-                    <a href class=nav0>Activities</a>
+                    <div id=subRightCol>
+                        <ul>
+
+                            <li style="margin-bottom: 15pt;">To provide a joyful, enthusastic, and spontateous attitude with the children</li>
+                            <li>To meet each individual child's physical and mental needs</li>
+                        </ul>
+                    </div>
                 </div>
-                <img src=etc/activitiesLearn.png id=activitiesLearn>
-                <p>Although i'm not their mother. I care for them each day. I cuddle sing and read to them, and watch them as they play. I see each new accomplishment, and help them grow and learn. I understand their language, and listen with concern. They come to me for comfort, and i kiss away their tears. They proudly show their work to me, I give the loudest cheers. I am noth their mother, but my role is just as strong. I nurture them and keep safe, though maybe not for long. I know someday the time may come when we will have to part. But I know each child I've cared for is forever in my heart.</p>
+            </div>
+            <div id=activitiesBox>
+                <div id=activities style="display:none;">
+                    <span class=headerStyle1>Activities</span>
+                    <p class=subheader>THINGS TO DO</p>
+                    <div class=activitiesNav>
+                        <a class=nav1 onclick='ActivitiesTab("2")'>Learn</a>
+                        <a class=nav1 onclick='ActivitiesTab("1")'>Play</a>
+                        <a class=nav0 onclick='ActivitiesTab("0")'>Activities</a>
+                    </div>
+                    <img src=etc/activitiesLearn.png class=activitiesLearn>
+                    <div class=activitiesText>consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur? At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint . "</div>
+                </div>
+                <div id=play style="display:none;">
+                    <span class=headerStyle1>Activities</span>
+                    <p class=subheader>THINGS TO DO</p>
+                    <div class=activitiesNav>
+                        <a class=nav1 onclick='ActivitiesTab("2")'>Learn</a>
+                        <a class=nav0 onclick='ActivitiesTab("1")'>Play</a>
+                        <a class=nav1 onclick='ActivitiesTab("0")'>Activities</a>
+                    </div>
+                    <img src=etc/activitiesLearn.png class=activitiesLearn>
+                    <div> ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<br> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,</div>
+                </div>
+                <div id=learn style="display:none;">
+                    <span class=headerStyle1>Activities</span>
+                    <p class=subheader>THINGS TO DO</p>
+                    <div class=activitiesNav>
+                        <a class=nav0 onclick='ActivitiesTab("2")'>Learn</a>
+                        <a class=nav1 onclick='ActivitiesTab("1")'>Play</a>
+                        <a class=nav1 onclick='ActivitiesTab("0")'>Activities</a>
+                    </div>
+                    <img src=etc/activitiesLearn.png class=activitiesLearn>
+                    <div>Although i'm not their mother. I care for them each day. I cuddle sing and read to them, and watch them as they play. I see each new accomplishment, and help them grow and learn. I understand their language, and listen with concern. They come to me for comfort, and i kiss away their tears. They proudly show their work to me, I give the loudest cheers. I am noth their mother, but my role is just as strong. I nurture them and keep safe, though maybe not for long. I know someday the time may come when we will have to part. But I know each child I've cared for is forever in my heart.</div>
+                </div>
             </div>
             <div id=testimonialBox>
-                <div id=headerStyle2>
+                <div class=headerStyle2>
                 Testimonials
                 </div>
-                <div id=subheader>
+                <div class=subheader>
                     WHAT PARENTS SAY ABOUT US
                 </div>
                 <div id=testimonialBody>
-                    <div id=testLeft> &#10148;  </div>
-                    <div id=testMiddle> Id diam maecenas ultricies mi eget. Morbi tristique senectus et netus et. Aliquet lectus proin nibh nisl condimentum id venenatis a condimentum. Morbi tristique senectus et netus et. Aliquet lectus proin nibh nisl condimentum id venenatis a condimentum. </div>
-                    <div id=testRight> &#10148; </div>
-                    <p style=clear:both;>-John Smith</p>
-                    <p id=JoinUsBox>Join Us Today!</p>
+                    <div id=testLeft onclick="testimonialDecrease()"> &#10148;  </div>
+                    <div id=testMiddle> I cannot speak highly enough about how much of a pleasure it was to have my children at Country Clubhouse from the time they were babies to them being all grown up. Completely blown away by the fantastic and high quality care that Monica gives. She treats you like family and cares for your children the same way. I recommend this daycare 100% with no reservations, and look forward to bringing my younger children back here, if needed, in the future. </div>
+                    <div id=testRight onclick="testimonialIncrease()"> &#10148; </div>
+                    <p id=testee style=clear:both;>-Kristin Muñoz</p>
+                    <a href="#contactBox" id=JoinUsBox>Join Us Today!</a>
                 </div>
             </div>
             <div id=contactBox>
-                 <div id=headerStyle1>
-                     Contact
-                </div>
-                <div id=subheader>
-                    SIGN UP
-                </div>
+                 <div class=headerStyle1>Contact </div>
+                <div class=subheader>SIGN UP </div>
+                <div id=SignupError style="color: red;font-weight: bold;"></div>
                 <form>
                     <div>
-                        First Name:
-                        <input type="text" placeholder="Your First Name" class=inputTxtBox>
-                        Last Name:
-                        <input type="text" placeholder="Your Last Name" class=inputTxtBox>
+                        <label for=fname><span class=asterick style="display:none;">*</span>First Name:</label>
+                        <input type="text" placeholder="Your First Name" class=inputTxtBox id=fname>
+                        <label for=lname><span class=asterick style="display:none;">*</span>Last Name:</label>
+                        <input type="text" placeholder="Your Last Name" class=inputTxtBox id=lname>
                     </div>
                     <div>
-                        Phone Number:
-                        <input type="text" placeholder="Your Phone #" class=inputTxtBox>
-                        Email Address:
-                        <input type="text" placeholder="Your Email Address" class=inputTxtBox>
+                        <label for=phone><span class=asterick style="display:none;">*</span>Phone Number:</label>
+                        <input type="text" placeholder="Your Phone #" class=inputTxtBox id=phone>
+                        <label for=email><span class=asterick style="display:none;">*</span>Email Address:</label>
+                        <input type="text" placeholder="Your Email Address" class=inputTxtBox id=email>
                     </div>
                     <div>
-                        Child(s) age:
-                        <input type="text" placeholder="Ages 0-10" class=inputTxtBox>
+                        <label for=age><span class=asterick style="display:none;">*</span>Child(s) age:</label>
+                        <input type="text" placeholder="Ages 0-12" class=inputTxtBox id=age>
                     </div>
                     <div>
-                        <input type="button" value="Submit" id="submit">
+                        <input type="button" value="Submit" id="submit" onclick="SendMail()">
                     </div>
                     <div style="font-size:12pt;">
-                         Don't like emails? Contact me at mhenkelman79@gmail.com or (217) 821-2698
+                        Don't like emails? Contact me at (217) 821-2698
                     </div>
                 </form>
-                
             </div>
         </div>
     </body>
+    <script src=main.js></script>
 </html>

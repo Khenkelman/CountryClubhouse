@@ -1,31 +1,35 @@
 
-#headerStyle1{
+@font-face{
+    font-family:"Alata";
+    src:url("Alata-Regular.ttf")
+}
+.headerStyle1{
     font-family: myCursive;
     font-size: 40pt;
     color: #e85d5d;
     word-spacing: 1pt;
 }
-#HeaderStyle2{
+.HeaderStyle2{
     font-family: myCursive;
     font-size: 40pt;
     color: white;
     word-spacing: 1pt;
 }
-#subheader{
-    font-family: sans-serif;
+.subheader{
+    font-family: Alata, sans-serif;
     font-weight: bold;
     font-size: 14pt;
     color: black;
     word-spacing: 1pt;
-    padding-bottom: 15pt;
+    padding-bottom: 5pt;
     margin-top:0px;
-    letter-spacing: -0.4pt;
 }
 #meetMonicaBody{
     color: gray;
-    font-family: serif;
+    font-family: Alata, sans-serif;
     padding-left: 40pt;
     padding-right: 40pt;
+    font-size: 14pt;
 }
 #testimonialBody{
     text-align: center;
@@ -35,7 +39,8 @@
     display: inline;
     padding: 7px;
     border: 1px solid white;
-    font-family: sans-serif
+    font-family: sans-serif;
+    color: white;
 }
 #submit{
     font-size: 12pt;

@@ -32,11 +32,11 @@
 }
 #post{
     position: relative;
-    width: 100%;
+    width: 99%;
     height: 100%;
     text-align: center;
     background: url('etc/woodpost.png') no-repeat;
-    background-size: 10% 100%;
+    background-size: 12% 110%;
     background-position: center;
 }
 #sign1{

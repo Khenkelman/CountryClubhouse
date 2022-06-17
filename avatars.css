@@ -15,6 +15,15 @@
 #monicaAvatar:hover{
     transform: scale(1.1, 1.1);
 }
+#anthonyAvatar{
+    width: 63pt;
+    padding-right:10pt;
+    padding-top: 20pt;
+    padding-left:10pt;
+}
+#anthonyAvatar:hover{
+    transform: scale(1.1, 1.1);
+}
 #lexiAvatar{
     width: 55pt;
     padding-right:10pt;

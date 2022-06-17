@@ -1,5 +1,9 @@
+.preload{
+    width: 0%;
+    height: 0%;
+}
 #kidsBanner{
-    width: 90%;
+    width: 95%;
     margin: 10pt;
     margin-bottom: 1pt;
     display: inline;
@@ -18,7 +22,7 @@
 }
 #imgBox1{
     display: inline-block;
-    width: 30%;
+    width: 32%;
     height: 100%;
     background: url(etc/babiesBox.png) no-repeat;
     background-size: 100% 100%;
@@ -30,7 +34,7 @@
 }
 #imgBox2{
     display: inline-block;
-    width: 30%;
+    width: 32%;
     height: 100%;
     background: url(etc/toddlersBox.png) no-repeat;
     background-size: 100% 100%;
@@ -42,7 +46,7 @@
 }
 #imgBox3{
     display: inline-block;
-    width: 30%;
+    width: 32%;
     height: 100%;
     background: url(etc/schoolersBox.png) no-repeat;
     background-size: 100% 100%;
@@ -51,18 +55,4 @@
     transform: scale(1.05, 1.05);
     background: url(etc/schoolersBox2.png) no-repeat;
     background-size: 100% 100%;
-}
-
-#imgBox2{
-    width: 30%;
-}
-#imgBox2:hover{
-    transform: scale(1.05, 1.05);
-}
-
-#imgBox3{
-    width: 30%;
-}
-#imgBox3:hover{
-    transform: scale(1.05, 1.05);
 }

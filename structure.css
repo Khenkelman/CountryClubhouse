@@ -10,49 +10,13 @@
     overflow-y: scroll;
 }
 
-@media screen and (orientation:portrait) {
-    
-    #leftcol{
-        width: 5%;
-        opacity: 0;
-    }
-    #rightcol{
-        width: 95%;
-        margin-top: 8%;
-    }
-    #sign1{
-        transform: rotate(0.01turn);
-        font-size: max(4vw, 8pt);
-    }
-    #sign2{
-        transform: rotate(-0.01turn);
-        font-size: max(4vw, 8pt);
-    }
-    #signHeader{
-        opacity: 1;
-    }
-    #activitiesBox{
-        font-size: 6pt;
-    }
-    #testimonialBox{
-        font-size: 8pt;
-    }
-    #imgContainer{
-        height: 13%;
-    }
-     #meetMonicaBody{
-         font-size: 8pt
-    }
-    #tap{
-        font-size: 7pt
-    }
-}
-
 #contactBox{
     display: inline-block;
     background: url(backgrounds/white.png);
-    background-size: 100%;
-    width:90%;
+    -webkit-animation:mymove 30s linear infinite;
+    /* Safari and Chrome */
+    animation:mymove 30s linear infinite;
+    width:95%;
     margin-top:15pt;
     padding: 15pt;
     border-radius: 10px;
@@ -61,25 +25,32 @@
     margin-left: 3px;
     margin-bottom: 100pt;
     padding-bottom: 70pt;
+    font-family: Alata, sans-serif;
 }
 #meetMonicaBox {
-    display: block;
+    display: inline-block;
     background: url(backgrounds/white.png);
-    width:90%;
+    -webkit-animation:mymove 30s linear infinite;
+    /* Safari and Chrome */
+    animation:mymove 30s linear infinite;
+    width:95%;
     text-align: center;
     padding: 15pt;
     border-radius: 10px;
     box-shadow: 0px 0px 7px gray;
     margin-left: 3px;
     margin-top:15pt;
-    padding-bottom: 70pt;
+    padding-bottom: 50pt;
+    font-family: Alata, sans-serif;
 }
 #ourMissionBox {
     display: inline-block;
     background: url('backgrounds/red.png');
-    background-size: 100%;
-    width:90%;
-    height: auto;
+    background-repeat: repeat;
+    -webkit-animation:mymove 30s linear infinite;
+    /* Safari and Chrome */
+    animation:mymove 30s linear infinite;
+    width:95%;
     margin-top:15pt;
     padding: 15pt;
     border-radius: 10px;
@@ -87,30 +58,36 @@
     box-shadow: 0px 0px 7px gray;
     margin-left: 3px;
     padding-bottom: 50pt;
+    font-family: Alata, sans-serif;
 }
 #activitiesBox{
     display: inline-block;
     background: url("backgrounds/white.png");
-    background-size: 100%;
-    width:90%;
+    -webkit-animation:mymove 30s linear infinite;
+    /* Safari and Chrome */
+    animation:mymove 30s linear infinite;
+    width:95%;
     height: auto;
     margin-top:15pt;
     padding: 15pt;
     border-radius: 10px;
     text-align: center;
-    font-family: sans-serif;
-    letter-spacing: 1;
+    font-family: Alata, sans-serif;
     box-shadow: 0px 0px 7px gray;
     margin-left: 3px;
     padding-bottom: 70pt;
+    font-size: 12pt;
+}
+.activitiesText{
+    font-size: 12pt;
+    font-weight: normal;
 }
 #subLeftCol{
     display: inline;
     float:left;
     width: 42%;
     color: white;
-    font-family: sans-serif;
-    letter-spacing: 1;
+    font-family: Alata, sans-serif;
     margin-left: 5%;
     margin-right: 2%;
     font-size: 14pt;
@@ -121,8 +98,7 @@
     float:left;
     width: 42%;
     color: white;
-    font-family: sans-serif;
-    letter-spacing: 1;
+    font-family: Alata, sans-serif;
     margin-left: 2%;
     margin-right: 5%;
     font-size: 14pt;
@@ -131,8 +107,10 @@
 #testimonialBox{
     display: inline-block;;
     background: url(backgrounds/orange.png);
-    background-size: 100%;
-    width:90%;
+    -webkit-animation:mymove 30s linear infinite;
+    /* Safari and Chrome */
+    animation:mymove 30s linear infinite;
+    width:95%;
     margin-top:15pt;
     padding: 15pt;
     padding-bottom: 30pt;
@@ -154,11 +132,124 @@
     font-size: 20pt;
 }
 #testMiddle{
-    font-family: sans-serif;
+    font-family: Alata, sans-serif;
     float: left;
     width: 80%;
     padding-bottom: 10pt;
+    font-size: 14pt;
 }
 #logo{
     width:100%;
+    transform: translateY(2pt)
+}
+
+@-webkit-keyframes mymove {
+    from {
+        background-position: 0% 0%;
+    }
+    to {
+        background-position: 100% -100%;
+    }
+}
+@keyframes mymove {
+    from {
+        background-position: 0% 0%;
+    }
+    to {
+        background-position: 100% -100%;
+    }
+}
+@media (max-height: 700px){
+    body {
+        width: 80%; height: 95%;
+        margin-left: 10%; margin-top: 1%;
+    }
+    .signBox{ margin-bottom: 0;}
+    #logo{
+        width: 80%;
+    }
+    #post{
+        width: 80%;
+    }
+    @-webkit-keyframes mymove {
+        from {
+            background-position: 0% 0%;
+        }
+        to {
+            background-position: 0% 0%;
+        }
+    }
+    @keyframes mymove {
+        from {
+            background-position: 0% 0%;
+        }
+        to {
+            background-position: 0% 0%;
+        }
+    }
+}
+@media screen and (orientation:portrait) {
+    
+    #leftcol{
+        width: 3%;
+        opacity: 0;
+    }
+    #rightcol{
+        width: 95%;
+        margin-top: 8%;
+    }
+    #sign1{
+        transform: rotate(0.01turn);
+        font-size: max(4vw, 8pt);
+    }
+    #sign2{
+        transform: rotate(-0.01turn);
+        font-size: max(4vw, 8pt);
+    }
+    #signHeader{
+        opacity: 1;
+    }
+    #testimonialBox{
+        font-size: 14pt;
+    }
+    #imgContainer{
+        height: 13%;
+    }
+    #tap{
+        font-size: 7pt
+    }
+    #activitiesBox{
+        font-size: 12pt;
+    }
+    #testMiddle{
+        font-size: 18pt;
+    }
+    #meetMonicaBody{
+        font-size: 18pt;
+    }
+    #subLeftCol{
+        font-size: 16pt;
+    }
+    #subRightCol{
+        font-size: 16pt;
+    }
+    html {
+        background-size: 300% 100%;
+    }
+    @-webkit-keyframes mymove {
+        from {
+            background-position: 0% 0%;
+        }
+        to {
+            background-position: 0% 0%;
+        }
+    }
+    @keyframes mymove {
+        from {
+            background-position: 0% 0%;
+        }
+        to {
+            background-position: 0% 0%;
+        }
+    }
 }
